@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    // 9월 1일을 '9월 9일은 추석연휴'라고 고치기
+    let example = '오늘은 9월1일 입니다'
+    console.log(example)
+
+    const day = example.split(' ', 3)
+    console.dir(day)
+    console.log(day)
+
+    let newDay = day.splice(1, 1, "9월9일은추석연휴");
+    console.log(day)
+  </script>
+</body>
+</html>
