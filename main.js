@@ -1,4 +1,4 @@
-import styling from "./style"
+import styling from "./style.js"
 const root = document.getElementById('root')
 const A = []
 function test(bt, main){
@@ -7,4 +7,8 @@ function test(bt, main){
 test("button", "main")
 root.innerHTML = A.join('')
 
-styling(root, '100vw', '100vh', 'skyblue')
+const Button = document.querySelectorAll('button')
+console.dir(Button)
+const set = document.querySelector('main')
+console.dir(set)
+styling(root, Button, set);
