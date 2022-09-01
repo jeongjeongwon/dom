@@ -1,6 +1,7 @@
-function styling(root, Button, main){
-  const container = []
-  container.push(`<${root} id="root"><${Button}></${Button}><${main}></${main}><${Button}></${Button}></${root}>`)
-}
+export default function styling(element, width, height, backgroundColor){
+  element.style.width = width
+  element.style.height = height
+  element.style.backgroundColor = backgroundColor
 
-container("div","button","main")
+
+}

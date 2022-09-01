@@ -12,7 +12,7 @@
     const root = document.getElementById('root')
     const A = []
     function test(bt, main){
-      A.push(`<${main}><${bt}></${bt}></${main}>`)
+      A.push(`<${bt}></${bt}><${main}></${main}><${bt}></${bt}>`)
     }
     
     test("button", "main")
